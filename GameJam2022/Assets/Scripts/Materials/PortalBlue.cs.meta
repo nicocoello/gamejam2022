@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7c96c28b15fe2304aa3207411eee9668
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - BluePortal: {fileID: 2415607506470125040, guid: 95868aff001daf241a613d60b8adb73e, type: 3}
+  - PinkPortal: {fileID: 4723707305414711067, guid: 31d6bd47466baed4286b74ff06b3c888, type: 3}
+  - BluePlayer: {fileID: 322229478065377048, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
