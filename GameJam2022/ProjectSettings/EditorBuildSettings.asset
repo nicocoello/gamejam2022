@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PresentGame.unity
     guid: 13dc901b118b786489ecc1292cfb91b2
+  - enabled: 1
+    path: Assets/Scenes/PastGame.unity
+    guid: a7d4e54540d63d948ac4266768e72300
+  - enabled: 1
+    path: Assets/Scenes/FutureGame.unity
+    guid: da34f9801e16ce44ea6980e1a04dfd21
   m_configObjects: {}
