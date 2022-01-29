@@ -19,7 +19,7 @@ public class PortalPink : MonoBehaviour
 
     IEnumerator transport()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         BluePlayer.transform.position = new Vector2(BluePortal.transform.position.x, BluePortal.transform.position.y);
     }
     

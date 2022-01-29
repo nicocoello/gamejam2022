@@ -15,12 +15,13 @@ public class PortalBlue : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             StartCoroutine(transport());
+            
         }
     }
 
     IEnumerator transport()
     {
-        yield return new WaitForSeconds(0.05f);
+        yield return new WaitForSeconds(0.1f);
         BluePlayer.transform.position = new Vector2(PinkPortal.transform.position.x, PinkPortal.transform.position.y);
     }
 
