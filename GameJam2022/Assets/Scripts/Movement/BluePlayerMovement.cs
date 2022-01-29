@@ -41,7 +41,7 @@ public class BluePlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
         }
 
-        if (Input.GetKey(KeyCode.Space) && grounded)
+        if (Input.GetKey(KeyCode.W) && grounded)
             Jump();
 
         if (grounded && Mathf.Round(this.transform.rotation.z) != 0)
