@@ -59,7 +59,7 @@ public class BluePlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player") //estaria bueno añadir que el azul pueda saltar arriba del rosa solo en el pasado y viceversa
             grounded = true;
         anim.SetBool("IsJumping", false);
     }
