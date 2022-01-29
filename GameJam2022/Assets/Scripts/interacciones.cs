@@ -22,6 +22,7 @@ public class interacciones : MonoBehaviour
     public GameObject objetoAfectado;
     public bool infoHabilitada;
     public bool mostrarInfoHabilitada;
+    public string direccion;
     public LayerMask personaje;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +33,7 @@ public class interacciones : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {/*
         infoHabilitada = Physics2D.OverlapCircle(this.transform.position, 1f, personaje);
         if (infoHabilitada)
         {
@@ -45,15 +46,65 @@ public class interacciones : MonoBehaviour
         }
 
         mostrarInfoHabilitada = Physics2D.OverlapCircle(this.transform.position, 1f, personaje);
-
-        if(mostrarInfoHabilitada && Input.GetKeyDown(KeyCode.E))
+        */
+        if(mostrarInfoHabilitada && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.RightControl)))
         {
-            objetoAfectado.gameObject.GetComponent<Destruir>().afectado = true;
+            if(direccion == "abajo")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().abajo= true;
+                
+            }
+            if (direccion == "arriba")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().arriba = true;
+            }
+            if (direccion == "izquierda")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().izquierda = true;
+            }
+            if (direccion == "derecha")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().derecha = true;
+            }
+
             //objetoAfectado.gameObject.SetActive(true);
+        }
+        else if((Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.RightControl)))
+        {
+            if (direccion == "abajo")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().abajo = false;
+            }
+            if (direccion == "arriba")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().arriba = false;
+            }
+            if (direccion == "izquierda")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().izquierda = false;
+            }
+            if (direccion == "derecha")
+            {
+                objetoAfectado.gameObject.GetComponent<MoverObjeto>().derecha = false;
+            }
         }
         //if (!mostrarInfoHabilitada)
         //{
         //    objetoAfectado.gameObject.SetActive(false);
         //}
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            mostrarInfoHabilitada = true;
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            mostrarInfoHabilitada = false;
+        }
     }
 }
