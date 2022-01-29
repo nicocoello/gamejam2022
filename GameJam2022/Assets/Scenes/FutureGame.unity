@@ -566,6 +566,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PortalPresent
       objectReference: {fileID: 0}
+    - target: {fileID: 8389299572111046175, guid: b6156fcf80f24c04f87085a408cf86d3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -51.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389299572111046175, guid: b6156fcf80f24c04f87085a408cf86d3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6156fcf80f24c04f87085a408cf86d3, type: 3}
 --- !u!1 &647567821
