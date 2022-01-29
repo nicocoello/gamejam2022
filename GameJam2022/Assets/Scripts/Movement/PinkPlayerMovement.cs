@@ -42,7 +42,7 @@ public class PinkPlayerMovement : MonoBehaviour
             anim.SetBool("IsWalking", true);
         }
 
-        if (Input.GetKey(KeyCode.UpArrow)&& grounded)
+        if (Input.GetKey(KeyCode.UpArrow) && grounded)
             Jump();
 
         if(grounded && Mathf.Round(this.transform.rotation.z) != 0)
@@ -61,7 +61,7 @@ public class PinkPlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player")//estaria bueno añadir que el rosa pueda saltar arriba del azul solo en el futuro y viceversa
             grounded = true;
         anim.SetBool("IsJumping", false);
     }
