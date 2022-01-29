@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7650572682382885752}
   - component: {fileID: 3123475797347078374}
   - component: {fileID: 6708586463310676352}
+  - component: {fileID: -607110439200287627}
   m_Layer: 0
   m_Name: PinkPlayer
   m_TagString: Player
@@ -109,3 +110,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2702646, y: 1.3702651}
   m_EdgeRadius: 0
+--- !u!114 &-607110439200287627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533896004324056105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9be60263d70faab419f0adb0779688bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
