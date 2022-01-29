@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PinkPlayerMovement : MonoBehaviour
+public class MovementPlayers : MonoBehaviour
 {
     [SerializeField] private float speed;
     bool grounded;
@@ -16,14 +16,18 @@ public class PinkPlayerMovement : MonoBehaviour
     private void Update()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
+        if (this.CompareTag("PlayerBlue"))
+        {
+            horizontalInput = Input.GetAxis("Horizontal2");
+        }
         body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
 
-        if (Input.GetKey(KeyCode.UpArrow)&& grounded)
+        if (Input.GetKey(KeyCode.UpArrow) && grounded)
             Jump();
 
-        if(grounded && Mathf.Round(this.transform.rotation.z) != 0)
+        if (grounded && Mathf.Round(this.transform.rotation.z) != 0)
         {
-            this.transform.SetPositionAndRotation(new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z),new Quaternion(0,0,0,0));
+            this.transform.SetPositionAndRotation(new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), new Quaternion(0, 0, 0, 0));
         }
     }
 

@@ -23,7 +23,6 @@ public class BluePlayerMovement : MonoBehaviour
 
         if (grounded && Mathf.Round(this.transform.rotation.z) != 0)
         {
-            Debug.Log("rotado");
             this.transform.SetPositionAndRotation(new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z), new Quaternion(0, 0, 0, 0));
         }
     }
