@@ -1071,8 +1071,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53be4b2c13552f4c99d4e23cd5dedc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinkPlayerPos: {fileID: 0}
-  bluePlayerPos: {fileID: 0}
+  pinkPlayerPos: {fileID: 486153824}
+  bluePlayerPos: {fileID: 1765996635}
   destinyPos: {fileID: 289300672}
 --- !u!61 &127371828
 BoxCollider2D:
@@ -3134,7 +3134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1763205633396493537, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.303741
+      value: 17.403742
       objectReference: {fileID: 0}
     - target: {fileID: 1763205633396493537, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3788,6 +3788,11 @@ Transform:
   m_Father: {fileID: 1965517477}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &486153824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4850165919085089576, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
+  m_PrefabInstance: {fileID: 1862507262}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &488005001
 GameObject:
   m_ObjectHideFlags: 0
@@ -5781,7 +5786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &711249102
 Transform:
   m_ObjectHideFlags: 0
@@ -5829,7 +5834,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 711249101}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -5890,7 +5895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &718451702
 Transform:
   m_ObjectHideFlags: 0
@@ -5899,7 +5904,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718451701}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 100, y: 0, z: 0}
+  m_LocalPosition: {x: 113.6, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 200, z: 1}
   m_Children: []
   m_Father: {fileID: 1294727120}
@@ -5938,7 +5943,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 718451701}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -6448,11 +6453,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7522497893169446399, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 74.4
+      value: 87.199974
       objectReference: {fileID: 0}
     - target: {fileID: 7522497893169446399, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18
+      value: 26.5
       objectReference: {fileID: 0}
     - target: {fileID: 7522497893169446399, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6682,8 +6687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53be4b2c13552f4c99d4e23cd5dedc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinkPlayerPos: {fileID: 0}
-  bluePlayerPos: {fileID: 0}
+  pinkPlayerPos: {fileID: 486153824}
+  bluePlayerPos: {fileID: 1765996635}
   destinyPos: {fileID: 300664723}
 --- !u!61 &831180012
 BoxCollider2D:
@@ -7999,7 +8004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080185274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -736.5, y: 8.8, z: 2.5461063}
+  m_LocalPosition: {x: -736.5, y: 7.9, z: 2.5461063}
   m_LocalScale: {x: 0.8, y: 2, z: 1}
   m_Children:
   - {fileID: 221770590}
@@ -11879,7 +11884,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1654343321
 Transform:
   m_ObjectHideFlags: 0
@@ -11927,7 +11932,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654343320}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -13028,6 +13033,11 @@ MonoBehaviour:
   izquierda: 0
   derecha: 0
   velocidad: 0.1
+--- !u!1 &1765996635 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 322229478065377048, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
+  m_PrefabInstance: {fileID: 795470495}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1773330183
 GameObject:
   m_ObjectHideFlags: 0
@@ -13233,8 +13243,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c53be4b2c13552f4c99d4e23cd5dedc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pinkPlayerPos: {fileID: 0}
-  bluePlayerPos: {fileID: 0}
+  pinkPlayerPos: {fileID: 486153824}
+  bluePlayerPos: {fileID: 1765996635}
   destinyPos: {fileID: 793911308}
 --- !u!1 &1812769461
 GameObject:
@@ -13683,11 +13693,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4335406426581683321, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 79
+      value: 83.6
       objectReference: {fileID: 0}
     - target: {fileID: 4335406426581683321, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 31.7
       objectReference: {fileID: 0}
     - target: {fileID: 4335406426581683321, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14500,7 +14510,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457480599849506694, guid: 19aad40f7bfe81c4e8329f5bcf3d24e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.703744
+      value: 14.803744
       objectReference: {fileID: 0}
     - target: {fileID: 457480599849506694, guid: 19aad40f7bfe81c4e8329f5bcf3d24e8, type: 3}
       propertyPath: m_LocalPosition.z

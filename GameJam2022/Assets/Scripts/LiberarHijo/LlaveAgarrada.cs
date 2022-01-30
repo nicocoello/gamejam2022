@@ -16,7 +16,7 @@ public class LlaveAgarrada : MonoBehaviour
             else
             {
                 objetoAfectado.gameObject.GetComponent<EstadoLlaves>().key2 = true;
-            }
+            }            
         }
     }
 }
