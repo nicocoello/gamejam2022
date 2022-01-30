@@ -1202,7 +1202,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 40
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1210,7 +1210,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &129712481 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4862805740224855365, guid: c14f0dc53c3e1f04a825983f1b9f7db6, type: 3}
@@ -1225,7 +1225,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8136900753342019986, guid: ee357e5911f84db44a95ce577e033793, type: 3}
       propertyPath: m_Constraints
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1388371322693255029, guid: ee357e5911f84db44a95ce577e033793, type: 3}
       propertyPath: m_Name
@@ -7101,7 +7101,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8961025749801693395, guid: e5a910cf6ae19a847953b66ecc0886a7, type: 3}
       propertyPath: m_text
-      value: Welcome to this dimention
+      value: Welcome to this dimention. If you need to, press R to restart the level
       objectReference: {fileID: 0}
     - target: {fileID: 8961025750449686265, guid: e5a910cf6ae19a847953b66ecc0886a7, type: 3}
       propertyPath: m_RootOrder
@@ -12036,7 +12036,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 40
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -12044,7 +12044,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1983270780
 GameObject:
   m_ObjectHideFlags: 0
@@ -12776,7 +12776,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &2036479676
 GameObject:
   m_ObjectHideFlags: 0
