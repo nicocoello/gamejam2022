@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * https://youtu.be/Q5TMGOGT0tg?t=598
@@ -23,18 +24,21 @@ public class interacciones : MonoBehaviour
     public bool infoHabilitada;
     public bool mostrarInfoHabilitada;
     public string direccion;
-    public LayerMask personaje;
     // Start is called before the first frame update
     void Start()
     {
         Interactuar.gameObject.SetActive(false);
-        objetoAfectado.gameObject.SetActive(false);
+        //objetoAfectado.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {/*
         infoHabilitada = Physics2D.OverlapCircle(this.transform.position, 1f, personaje);
+      
+
+        mostrarInfoHabilitada = Physics2D.OverlapCircle(this.transform.position, 1f, personaje);
+        */
         if (infoHabilitada)
         {
             Interactuar.gameObject.SetActive(true);
@@ -44,10 +48,7 @@ public class interacciones : MonoBehaviour
             Interactuar.gameObject.SetActive(false);
 
         }
-
-        mostrarInfoHabilitada = Physics2D.OverlapCircle(this.transform.position, 1f, personaje);
-        */
-        if(mostrarInfoHabilitada && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.RightControl)))
+        if (mostrarInfoHabilitada && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.RightControl)))
         {
             if(direccion == "abajo")
             {
@@ -98,6 +99,7 @@ public class interacciones : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             mostrarInfoHabilitada = true;
+            infoHabilitada = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -105,6 +107,7 @@ public class interacciones : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             mostrarInfoHabilitada = false;
+            infoHabilitada = true;
         }
     }
 }
