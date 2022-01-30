@@ -138,7 +138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8961025750449686265, guid: e5a910cf6ae19a847953b66ecc0886a7, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8961025750449686265, guid: e5a910cf6ae19a847953b66ecc0886a7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4162,6 +4162,36 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &619525259
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619525260}
+  m_Layer: 0
+  m_Name: destinyTeleport
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619525260
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619525259}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 83, y: 4.6, z: -71.26552}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &626642447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4651,7 +4681,7 @@ PrefabInstance:
       objectReference: {fileID: 2122695600}
     - target: {fileID: 4335406426581683321, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4335406426581683321, guid: 26d91b60c8b648b4795994b8bbf713fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5350,7 +5380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7522497893169446399, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7522497893169446399, guid: cca470038ae4cf84a86edc0e75646b88, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8398,7 +8428,6 @@ GameObject:
   - component: {fileID: 1345916517}
   - component: {fileID: 1345916516}
   - component: {fileID: 1345916518}
-  - component: {fileID: 1345916519}
   m_Layer: 0
   m_Name: FutureFloor (4)
   m_TagString: Ground
@@ -8517,18 +8546,6 @@ MonoBehaviour:
   izquierda: 0
   derecha: 0
   velocidad: 0.1
---- !u!114 &1345916519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1345916514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d002b82ef1b45bf43bdfb489dfa3ecc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1355466609
 GameObject:
   m_ObjectHideFlags: 0
@@ -8932,6 +8949,14 @@ PrefabInstance:
     - target: {fileID: 4472404669934285743, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
       propertyPath: m_Name
       value: SameLevelPortal
+      objectReference: {fileID: 0}
+    - target: {fileID: 7028660786082104393, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
+      propertyPath: destinyPos
+      value: 
+      objectReference: {fileID: 619525259}
+    - target: {fileID: 7028660786082104393, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
+      propertyPath: currentLevel
+      value: FutureGame
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aabe7ada57327d84ab3e6281d3ad0618, type: 3}
