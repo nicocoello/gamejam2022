@@ -5,7 +5,8 @@ using UnityEngine;
 public class PinkPlayerMovement : MonoBehaviour
 {
      
-    [SerializeField] private float speed;    
+    [SerializeField] private float speed;
+    [SerializeField] AudioSource jumpAudio;
     bool grounded;
     private Rigidbody2D body;
     private Animator anim;
@@ -57,6 +58,7 @@ public class PinkPlayerMovement : MonoBehaviour
         body.velocity = new Vector2(body.velocity.x, speed);        
         grounded = false;
         anim.SetBool("IsJumping", true);
+        jumpAudio.Play();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
