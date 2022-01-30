@@ -9,13 +9,13 @@ public class LlaveAgarrada : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            if (!objetoAfectado.gameObject.GetComponent<Liberar>().key1)
+            if (!objetoAfectado.gameObject.GetComponent<EstadoLlaves>().key1)
             {
-                objetoAfectado.gameObject.GetComponent<Liberar>().key1 = true;
+                objetoAfectado.gameObject.GetComponent<EstadoLlaves>().key1 = true;
             }
             else
             {
-                objetoAfectado.gameObject.GetComponent<Liberar>().key2 = true;
+                objetoAfectado.gameObject.GetComponent<EstadoLlaves>().key2 = true;
             }
         }
     }
