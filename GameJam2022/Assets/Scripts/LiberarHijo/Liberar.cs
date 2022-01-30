@@ -8,13 +8,16 @@ public class Liberar : MonoBehaviour
     public bool player2 = false;
     public bool key1 = false;
     public bool key2 = false;
-    public GameObject keyState;
+    public GameObject keyState=null;
 
     // Start is called before the first frame update
     void Start()
     {
-        key1 = keyState.gameObject.GetComponent<EstadoLlaves>().key1;
-        key2 = keyState.gameObject.GetComponent<EstadoLlaves>().key2;
+        if (keyState)
+        {
+            key1 = keyState.gameObject.GetComponent<EstadoLlaves>().key1;
+            key2 = keyState.gameObject.GetComponent<EstadoLlaves>().key2;
+        }
 
     }
 
