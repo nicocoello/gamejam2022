@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  jumpAudio: {fileID: 4422576441917054953, guid: 61ec9ebf28074894e8d944ec20ece8fc, type: 3}
 --- !u!95 &-7492419181550592716
 Animator:
   serializedVersion: 3

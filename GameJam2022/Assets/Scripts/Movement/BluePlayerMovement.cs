@@ -5,6 +5,7 @@ using UnityEngine;
 public class BluePlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
+    [SerializeField] AudioSource jumpAudio;    
     bool grounded;
     private Rigidbody2D body;
     private Animator anim;
@@ -55,6 +56,7 @@ public class BluePlayerMovement : MonoBehaviour
         body.velocity = new Vector2(body.velocity.x, speed);
         grounded = false;
         anim.SetBool("IsJumping", true);
+        jumpAudio.Play();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -62,6 +64,6 @@ public class BluePlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground" || collision.gameObject.tag == "Player") //estaria bueno añadir que el azul pueda saltar arriba del rosa solo en el pasado y viceversa
             grounded = true;
         anim.SetBool("IsJumping", false);
-    }
+    }    
 
 }

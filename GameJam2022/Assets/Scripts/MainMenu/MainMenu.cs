@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    [SerializeField] AudioSource buttonAudio;
    public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -15,5 +16,9 @@ public class MainMenu : MonoBehaviour
         //Esto hay que comentarlo antes de hacer la build porque si no se va a romper
         UnityEditor.EditorApplication.isPlaying = false;
         Application.Quit();
+    }
+    public void OnClick()
+    {
+        buttonAudio.Play();
     }
 }
