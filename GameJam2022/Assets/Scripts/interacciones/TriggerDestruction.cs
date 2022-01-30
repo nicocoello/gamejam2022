@@ -12,6 +12,7 @@ public class TriggerDestruction : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             objetoAfectado.gameObject.GetComponent<Destruir>().afectado = true;
+            Destroy(this.gameObject);
         }
     }
 }
